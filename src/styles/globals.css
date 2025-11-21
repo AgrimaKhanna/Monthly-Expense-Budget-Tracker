@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  @font-face {
+    font-family: 'Sora';
+    src: url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap');
+  }
+
+  :root {
+    --color-primary: #0891b2;
+    --color-secondary: #06b6d4;
+    --color-accent: #f43f5e;
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-danger: #ef4444;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Sora', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  p {
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+
+  button {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  input, select, textarea {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  label {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  span {
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+}
