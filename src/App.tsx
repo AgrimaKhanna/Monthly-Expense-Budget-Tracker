@@ -360,9 +360,10 @@ export default function App() {
     XLSX.writeFile(workbook, fileName);
   };
 
-  const monthName = new Date(currentMonth + '-01').toLocaleDateString('en-US', { 
-    month: 'long', 
-    year: 'numeric' 
+  const [year, month] = currentMonth.split('-').map(Number);
+  const monthName = new Date(year, month - 1, 1).toLocaleDateString('en-US', {
+    month: 'long',
+    year: 'numeric'
   });
 
   if (loading) {
